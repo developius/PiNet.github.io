@@ -30,51 +30,54 @@
         })();
       }
     </script>
-  </head>
-  <body>
-    <div class='navbar navbar-fixed-top'>
-      <div class='navbar-inner'>
-        <div class='container-fluid'>
-          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
-          </a>
-          <a class='brand' href='/'>PiNet, a system for Raspberry Pi classrooms</a>
-          <div class='nav-collapse'>
-            <ul class='nav'>
-              <li>
-                <a href='/'>Home</a>
-              </li>
-              <li>
-                <a href="/articles/guides.html">All guides</a>
-              </li>
-              <li>
-                <a href="/articles/installation/getting_started.html">Getting started</a>
-              </li>
-              <li>
-                <a href='/articles/manage-users/manage-users.html'>Managing users</a>
-              </li>
-              <li>
-                <a href='/articles/shared-folders/shared-folders.html'>Shared folders</a>
-              </li>
-              <li>
-                <a href='/articles/backups/backups.html'>Backups</a>
-              </li>
-              <li>
-                <a href='/articles/advanced/advanced.html'>Advanced</a>
-              </li>
-              <li>
-                <a href='/articles/faq.html'>FAQ</a>
-              </li>
-              <li>
-                <a href='/blog/bloglist.html'>Blog</a>
-              </li>
-            </ul>
-          </div>
+</head>
+
+<body data-spy="scroll" data-target="#sidebar">
+    <style type="text/css">
+    img {
+        max-width: 100%;
+    }
+    </style>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class='navbar-brand' href='/'>PiNet<small>A system for Raspberry Pi classrooms</small></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/articles/guides.html">All guides</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/articles/installation/getting_started.html">Getting started</a></li>
+                            <li><a href='/articles/manage-users/manage-users.html'>Managing users</a></li>
+                            <li><a href='/articles/shared-folders/shared-folders.html'>Shared folders</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href='/articles/backups/backups.html'>Backups</a></li>
+                            <li><a href='/articles/advanced/advanced.html'>Advanced</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='/articles/faq.html'>FAQ</a></li>
+                    <li><a href='/blog/bloglist.html'>Blog</a></li>
+                </ul>
+                <div class="nav navbar-nav navbar-right">
+                    <img src="/assets/images/PiNet-icon.png" class="img-responsive">
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </div>
-    </div>
+        <!-- /.container-fluid -->
+    </nav>
     <div class='container-fluid'>
       <div class='row-fluid'>
         <div class='span3'>

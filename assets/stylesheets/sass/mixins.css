@@ -1,0 +1,27 @@
+/* Mixins.scss
+ * Snippets of reusable CSS to develop faster and keep code readable
+ * ----------------------------------------------------------------- */
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    zoom: 1;
+    *display: inline; }
+  .clearfix:after {
+    clear: both; }
+
+.fixed-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1; }
+  .fixed-container:before, .fixed-container:after {
+    display: table;
+    content: "";
+    zoom: 1;
+    *display: inline; }
+  .fixed-container:after {
+    clear: both; }
+
+/*# sourceMappingURL=mixins.css.map */
