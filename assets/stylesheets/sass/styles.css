@@ -89,7 +89,7 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 900px; }
+    width: 900px; }
 
 .clear {
   clear: both; }
@@ -163,10 +163,8 @@ li.active {
   body {
     background: none; }
 
-  .headline {
-    padding: 0; }
   .headline img {
-    max-width: 100%; }
+    width: 112px; }
   .headline h1 {
     font-size: 60px; }
 
@@ -176,10 +174,15 @@ li.active {
 @media (max-width: 480px) {
   body {
     background: none; }
+
+  .headline {
+    padding: 0; }
     .headline h1 {
       line-height: 60px;
       padding-top: 85px;
       font-size: 30px; }
+    .headline img {
+      width: 100px; }
 
   .container-fluid footer {
     padding-left: 0px;

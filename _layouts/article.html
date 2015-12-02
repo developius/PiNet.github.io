@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang='en'>
-  <head>
+
+<head>
     <title>{{page.title}}</title>
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <meta content='PiNet, a system for setting up and managing a classroom set of Raspberry Pis. ' name='description' />
@@ -18,17 +19,20 @@
     <script src='/assets/javascripts/toc.js'></script>
     <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
     <script type="text/javascript">
-      if(!(window.location.hostname === "localhost")) {
+    if (!(window.location.hostname === "localhost")) {
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-31267936-1']);
         _gaq.push(['_trackPageview']);
-  
+
         (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
         })();
-      }
+    }
     </script>
 </head>
 
@@ -79,20 +83,22 @@
         <!-- /.container-fluid -->
     </nav>
     <div class='container-fluid'>
-      <div class='row-fluid'>
-        <div class='span3'>
-          <div class='well sidebar-nav'></div>
+        <div class='row'>
+            <div class='col-md-3 hidden-xs hidden-sm'>
+                <div class='sidebar-nav affix' id="sidebar"></div>
+            </div>
+            <div class='col-md-9'>
+                {{ content }}
+                <footer class='footer'>
+                    <div class="container">
+                        <p>This website was developed by <a href='http://github.com/PiNet'>PiNet team</a>.</p>
+                        <p>Follow us on Twitter: <a href='https://twitter.com/pinetdev'>@PiNetDev</a></p>
+                        <p>Website header artwork by <a href='http://www.andyhunt.com/'>Andy Hunt</a> and PiNet logo by <a href='https://about.me/minigirlgeek'>Amy Mather</a>. Neither should be copied or reproduced without prior consent.</p>
+                    </div>
+                </footer>
+            </div>
         </div>
-        <div class='span9'>
-          {{ content }}
-        </div>
-      <footer class='footer article'>
-        <p>This website was developed by
-          &nbsp;<a href='http://github.com/PiNet'>PiNet team</a>.</p>
-        <p>Follow us on Twitter:
-          &nbsp;<a href='https://twitter.com/pinetdev'>@PiNetDev</a></p>
-          <p>Website header artwork by <a href='http://www.andyhunt.com/'>Andy Hunt</a> and PiNet logo by <a href='https://about.me/minigirlgeek'>Amy Mather</a>. Neither should be copied or reproduced without prior consent.</p>
-      </footer>
     </div>
-  </body>
+</body>
+
 </html>
