@@ -42,5 +42,5 @@ jQuery.fn.toc = function () {
 };
 
 $(document).ready(function() {
-  $(".well.sidebar-nav").toc();
+  $(".sidebar-nav").toc();
 });

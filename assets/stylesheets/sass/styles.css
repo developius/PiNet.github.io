@@ -70,9 +70,6 @@ footer {
   margin: 36px 0 27px;
   text-align: center; }
 
-.sidebar-nav {
-  padding: 9px 0; }
-
 .headline {
   padding: 50px; }
   .headline img {
@@ -123,6 +120,19 @@ h2 {
 .container-fluid footer {
   padding-left: 320px;
   border: none; }
+
+#sidebar {
+  max-width: 25%;
+  padding-right: 16px; }
+
+li.active {
+  color: #fff;
+  background: #0088cc;
+  border-radius: 5px; }
+  li.active a {
+    color: #fff; }
+  li.active a:hover {
+    background: #0088cc; }
 
 /* Flat buttons - https://gist.github.com/brendandixon/4650236 */
 /*For IE */
